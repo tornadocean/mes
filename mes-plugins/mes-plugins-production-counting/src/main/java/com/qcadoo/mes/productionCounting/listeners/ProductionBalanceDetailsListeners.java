@@ -32,7 +32,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.qcadoo.mes.productionCounting.ProductionBalanceService;
 import com.qcadoo.mes.productionCounting.ProductionCountingService;
 import com.qcadoo.mes.productionCounting.constants.ProductionBalanceFields;
 import com.qcadoo.mes.productionCounting.constants.ProductionCountingConstants;
@@ -59,9 +58,6 @@ public class ProductionBalanceDetailsListeners {
 
     @Autowired
     private ProductionCountingService productionCountingService;
-
-    @Autowired
-    private ProductionBalanceService productionBalanceService;
 
     @Autowired
     private ProductionBalanceXlsService productionBalanceXlsService;
@@ -129,7 +125,4 @@ public class ProductionBalanceDetailsListeners {
                 ProductionCountingConstants.MODEL_PRODUCTION_BALANCE });
     }
 
-    public void disableCheckboxes(final ViewDefinitionState view, final ComponentState state, final String[] args) {
-        productionBalanceService.disableCheckboxes(view);
-    }
 }

@@ -101,8 +101,6 @@ public final class CostCalculationFields {
 
     public static final String SOURCE_OF_MATERIAL_COSTS = "sourceOfMaterialCosts";
 
-    public static final String CALCULATE_OPERATION_COSTS_MODE = "calculateOperationCostsMode";
-
     public static final String DATE = "date";
 
     public static final String GENERATED = "generated";
